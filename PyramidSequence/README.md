@@ -2,7 +2,7 @@
 
 ![Project Logo](insert_image_url_here)
 
-Brief project description goes here.
+This project employs an algorithm
 
 ## Table of Contents
 
