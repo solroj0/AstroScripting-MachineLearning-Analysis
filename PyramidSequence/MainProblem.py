@@ -1,8 +1,22 @@
+"""
+This program solves a challenge. There is a file in this directory organized with random #'s 
+and corresponding words. The pattern uses a sequence I have decoded below.
+The result is printed onto the terminal.
+
+"""
+
+import os
+
+script_directory = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_directory, "coding_qual_input.txt")
+
+
+
 data = [] 
 
 #first I am opening the file and reading each line as two variables seperated by a space
 #every line is appended as a pair into the tuple 'data'
-with open("coding_qual_input.txt", "r") as file:
+with open(file_path, "r") as file:
     for line in file:
         x, y = line.strip().split(' ', 1)
         data.append((int(x), y))
